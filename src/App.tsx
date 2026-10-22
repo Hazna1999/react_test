@@ -1,122 +1,65 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-
+// import StudentInfo from "./componenets/test";
+// import StudentCard from "./componenets/studentone";
+// import StudentCardTwo from "./componenets/studenttwo";
+// import Greetings from "./componenets/greetings";
+// import ProfileCard from "./componenets/profilecard";
+// import Calculator from "./componenets/Calculator";
+// import Passfail from "./componenets/Pasfail";
+// import Idcarddetails from "./componenets/Idcarddetails";
+// import Bookcarddetails from "./componenets/Bookcarddetails";
+// import AlertButton from "./componenets/button";
+// import Multibutton from "./componenets/Multibutton";
+//import Counter from "./componenets/Counter"
+  // import Counter from "./componenets/Counterusestate";
+  // import LightSwitch from "./componenets/Toggle";
+// import Countswitcher from "./componenets/Countswitcher";
+// import Counterapp from "./componenets/Counterapp";
+// import Liveinput from "./componenets/Liveinput";
+// import LoginInput from "./componenets/Multistates";
+// import ScoreTracker from "./componenets/ScoreTracker";
+// import LikeToggle from "./componenets/LikeToggle";
+// import Charcount from "./componenets/Charcount";
+// import NameInput from "./componenets/NameInput";
+// import Counter from "./componenets/Counterevents";
+// import ConditionalRendering from "./componenets/conditionalrendring";
+// import ToggleButton from "./componenets/Togglebutton"
+// import Objectmapping from "./componenets/Objectmapping"
+// import Pagetitle from  "./componenets/useeffect"
+// import SubjectList from "./componenets/SubjectList"
+// import FruitSearch from "./componenets/FruitSearch"
+import Apifetch from "./componenets/Apifetch"
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      {/* <Greetings/>
+      <ProfileCard/>
+      <Calculator/> 
+      <Passfail/> */}
+      {/* <Idcarddetails/> */}
+      {/* <Bookcarddetails/>
+      <AlertButton/>
+      <Multibutton/> */}
+      {/* <Counter/>
+      <LightSwitch/> */}
+      {/* <Countswitcher/>
+      <Counterapp/>
+      <Liveinput/> */}
+      {/* <LoginInput/> */}
+      {/* <ScoreTracker/>
+      <LikeToggle/>
+      <Charcount/>
+      <NameInput/>
+      <Counter/> */}
+      {/* <ConditionalRendering/>
+      <ToggleButton/>
+      <Objectmapping/>
+      <Pagetitle/> */}
+      {/* <SubjectList/>
+      <FruitSearch/> */}
+      <Apifetch/>
 
-      <div className="ticks"></div>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+    </>   
   )
 }
-
-export default App
+export default App;
