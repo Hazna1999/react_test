@@ -27,7 +27,12 @@
 // import Pagetitle from  "./componenets/useeffect"
 // import SubjectList from "./componenets/SubjectList"
 // import FruitSearch from "./componenets/FruitSearch"
-import Apifetch from "./componenets/Apifetch"
+import {BrowserRouter, Routes,Route } from "react-router";
+// import Apifetch from "./componenets/Apifetch"
+import Home from "./componenets/Home"
+import Aboutus from "./componenets/Aboutus"
+import Contactus from "./componenets/Contactus"
+import Navbar from "./componenets/Navbar"
 function App() {
   return (
     <>
@@ -56,7 +61,15 @@ function App() {
       <Pagetitle/> */}
       {/* <SubjectList/>
       <FruitSearch/> */}
-      <Apifetch/>
+      {/* <Apifetch/> */}
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/about" element={<Aboutus/>}></Route>
+        <Route path="/contact" element={<Contactus/>}></Route>
+      </Routes>
+      </BrowserRouter>
 
 
     </>   
